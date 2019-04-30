@@ -1,0 +1,14 @@
+<html>
+
+<body>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+    <h1>{{ text.name }}</h1>
+<h1>{{ text.email}}</h1>
+
+</form>
+</body>
+</html>
